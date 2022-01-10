@@ -1,5 +1,5 @@
-import { Item, GildedRose } from '@/gilded-rose';
-
+import {GildedRose } from '@/gilded-rose';
+import {Item} from '@/models/item';
 describe('Gilded Rose', () => {
   it('should foo', () => {
     const gildedRose = new GildedRose([new Item('foo', 0, 0)]);
