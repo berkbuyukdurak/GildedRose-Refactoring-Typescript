@@ -1,0 +1,14 @@
+{
+    "item_types": {
+        "aged_brie": "Aged Brie",
+        "backstage_passes": "Backstage Passes",
+        "sulfuras": "Sulfuras",
+        "conjured": "Conjured"
+    },
+
+    "quality": {
+        "quality_step": 1,
+        "minimum_quality": 0,
+        "maximum_quality": 50
+    }
+}
