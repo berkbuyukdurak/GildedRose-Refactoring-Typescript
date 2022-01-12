@@ -1,4 +1,5 @@
-import { Item, GildedRose } from '@/gilded-rose';
+import { GildedRose } from '@/gilded-rose';
+import { Item } from '@/models/item';
 
 const items = [
   new Item("+5 Dexterity Vest", 10, 20), //
