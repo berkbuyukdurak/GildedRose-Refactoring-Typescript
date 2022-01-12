@@ -1,5 +1,6 @@
 import {Item} from "@/models/item";
 import {UpdateItemQuality} from "@/controllers/update-quality-controller";
+import * as _ from "lodash";
 
 
 export class GildedRose {
@@ -17,14 +18,10 @@ export class GildedRose {
 
   let qualityUpdater:UpdateItemQuality = new UpdateItemQuality();
 
-
-    for (let i = 0; i < this.items.length; i++) {
-      
-      // First, assigning items to the object.
-      // Object --> (name, sellIn, quality)
-      var item = new Item(this.items[i].name, this.items[i].sellIn, this.items[i].quality);
-      item = qualityUpdater.updateItemQuality(item);
-    }
+  this.items.forEach(selectedItemFromArray => {
+    var item = new Item(selectedItemFromArray.name, selectedItemFromArray.sellIn, selectedItemFromArray.quality);
+    item = qualityUpdater.updateItemQuality(item);
+  });
 
     return this.items;
   }
