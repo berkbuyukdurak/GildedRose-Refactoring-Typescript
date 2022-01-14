@@ -1,14 +1,15 @@
 {
     "item_types": {
         "aged_brie": "Aged Brie",
-        "backstage_passes": "Backstage Passes",
-        "sulfuras": "Sulfuras",
+        "backstage_passes": "Backstage passes to a TAFKAL80ETC concert",
+        "sulfuras": "Sulfuras, Hand of Ragnaros",
         "conjured": "Conjured"
     },
 
     "quality": {
         "quality_step": 1,
         "minimum_quality": 0,
-        "maximum_quality": 50
+        "maximum_quality": 50,
+        "sulfuras_quality": 80
     }
 }
